@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="script();"> 
+
+   <!--Login Form-->
+   <div class=" loginForm" id="loginForm" style="display: none;">
+    <p style="background-color:#EFFFF4; color: #008A45 ; width: 100%;">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+    <div class="row">
+      <div class="col">
+        <h2>Create Account</h2>
+        <form action="index.html" method="post" class="lform">
+          <input type="text" name="name" id="fname" placeholder="First Name" required>
+          <span class="input-group-btn" style="width:0px;"></span>
+          <input type="text" name="name" id="lname" placeholder="Last Name" required>
+          <div class="w-100"></div>
+          <input type="email" placeholder="Email" required style="width: 100%;">
+          <div class="w-100"></div>
+          <input type="password" placeholder="Password" required style="width: 100%;">
+          <div class="w-100"></div>
+          <input type="text" placeholder="Confirm Password" required style="width: 100%; border-bottom: 1px solid;">
+          <br><br>
+          <button type="submit" onclick="logInUser()" class="btn btn-primary" style="width: 100%;">Create Account</button>
+
+      </form>
+      <br><br>
+      <button class="btn btn-outline-secondary" style="width: 100%; margin-bottom: 10px;">Sign Up with facebook</button>
+      <button class="btn btn-outline-secondary" style="width: 100%;">Sign Up with Google</button>
+      </div>
+      <div class="col">
+        <a href=""><span style="color: black; text-align: right;">Already have an account?</span> Sign In</a>
+        <img src="styles/Group 3.png" alt="" srcset="">
+        <p style="font-size: 400;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+      </div>
+    
+    </div>
+  </div>
+  <!--Login Form-->
+    <!--..Navigation Bar..-->
+    <nav class= "navbar navbar-expand-lg">
+        <a href="" class="navbar-brand"><img src="styles/whole.png" alt="brand"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="form-inline mr-auto">
+                <input class="form-control ml-auto" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <a href="" class="TopPara navbar-text" id="name" style="color:black">Create account.<span style="color: blue;" onclick="signUpForm()">Its free!</span> </a>
+        </div>
+    </nav>
+    <!--..Navigation Bar..-->
+
+
+   
+
+    <!--Main Header-->
+    <div class="mainHeader" id="mainHeader">
+        <div class="mainHeaderText">
+            <h2><b> Computer Engineering</b> </h2>
+            <h6>142,765 Computer Engineers follow this</h6>
+        </div>
+        
+    </div>
+    <!--Main Header-->
+
+    <!--Blog Posts Header-->
+    <div class="blogPostHeader">
+        <nav class="navbar navbar-expand-lg ">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link bl" href="#">All Posts(32) <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#">Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bl" href="#">Event</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bl" href="#">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bl" href="#">Job</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-light my-2 mr-2 my-sm-0" type="submit">Write A Post</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Join Group</button>
+              </form>
+            </div>
+          </nav>
+          <hr>
+    </div>
+    
+    <!--Blog Posts Header-->
+    <!--Static Blog Posts-->
+    <div class="posts">
+        <div class="row">
+            <div class="leftcolumn">
+              <div class="card postBox">
+                <div><img src="styles/Rectangle 5.png" class="postImg" alt=""></div>
+                <h6><b>Article</b></h6>
+                <h5><b> What if famous brands had regular fonts? Meet RegulaBrands!</b> </h5>
+                <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…..</p>
+                <div style="display: flex; flex-direction: row;" class="mr-6 my-2 my-lg-0">
+                    <img src="styles/Rectangle 3.jpg" class="profilePic" alt=""><span>Sarthak Kamra</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill share" viewBox="0 0 16 16">
+                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                      </svg><span>1.4K Views</span>
+                </div>
+              </div>
+              <div class="card postBox">
+                <div><img src="styles/Rectangle 5 (1).png" class="postImg" alt=""></div>
+                <h6><b>Education</b></h6>
+                <h4><b> Tax Benefits for Investment under National Pension Scheme launched by Government</b> </h4>
+                <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="styles/Rectangle 3.jpg" class="profilePic" alt=""><span>Sarah West</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill share" viewBox="0 0 16 16">
+                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                      </svg><span> 1.4K Views</span>
+                </div>
+              </div>
+            <div class="card postBox">
+                <div><img src="styles/Rectangle 5 (2).png" class="postImg" alt=""></div>
+                <h6><b>Meet Up</b></h6>
+                <h4><b> Finance & Investment Elite Social Mixer @Lujiazui</b> </h4>
+                <i class="fa-regular fa-location-dot" style="color: #000000;"></i>
+                <button class="btn btn-outline-warning">Visit Website</button><br>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="styles/Rectangle 3.jpg" class="profilePic" alt=""><span>Ronal Jones</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill share" viewBox="0 0 16 16">
+                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                      </svg><span> 1.4K Views</span>
+              </div>
+              </div>
+              <div class="card jobBox">
+                <h6><b>Job</b></h6>
+                <h4><b> Software Developer</b> </h4>
+                <p>Innovaccer Analytics Private Ltd.</p>
+                <i class="fa-regular fa-location-dot" style="color: #000000;"></i>
+                <button class="btn btn-outline-success">Apply On Timesjob</button><br>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="styles/Rectangle 3.jpg" class="profilePic" alt=""><span>Sarthak Kamra</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill share" viewBox="0 0 16 16">
+                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                      </svg><span> 1.4K Views</span>
+              </div>
+            </div>
+            </div>
+            <div class="rightcolumn">
+              <div>
+                <form action="">
+                    <i class="fa fa-pencil locationPointer" id="demo" onclick="getLocation()" ></i></button>
+                    <input type="text" class="location">
+                </form><br>
+                <p>Your location will help us serve better and extend a personalised experience.</p>
+              </div>
+            </div>
+    </div>
+    </div>
+      
+    <!--Static Blog Posts-->
+    
+</body>
+
+<script src="https://kit.fontawesome.com/d50254564e.js" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+</html>
